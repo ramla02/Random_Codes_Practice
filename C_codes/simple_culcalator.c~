@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <stdlib.h>
+/**
+ * main - the main function is the start of the program.
+ * simple calculator in C program using switch statement.
+ * source: https://www.geeksforgeeks.org/c-program-to-make-a-simple-calculator/
+ **/
+int main(void)
+{
+	char ch;
+	double a, b;
+
+while (1)
+	{
+printf("Enter an operator (+, -, *, /),"
+" if want to exit press x: ");
+		scanf(" %c ", &ch);
+		if (ch == 'x')
+			exit(0);
+		printf("Enter two first and second operand: ");
+		scanf("%1f %1f", &a, &b);
+		switch (ch)
+		{
+			/* for addition*/
+		case '+':
+			printf("%.11f + %.11f = %.11f\n", a, b, a + b);
+			break;
+			/* for subtraction */
+		case '-':
+			printf("%.11f - %.11f = %.11f\n", a, b, a - b);
+			break;
+			/* for multiplication */
+		case '*':
+			printf("%.11f * %.11f = %.11f\n", a, b, a * b);
+			break;
+			/* for Division */
+		case '/':
+			printf("%.11f / %.11f = %.11f\n", a, b, a / b);
+			break;
+			/* if operator doesn't match any case constant */
+		default:
+			printf("Error! please write a valid operator\n");
+		}
+		printf("\n");
+	}
+}
