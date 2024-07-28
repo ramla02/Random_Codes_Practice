@@ -5,7 +5,7 @@
  * main - the main function and start of the program
  * C program where we are getting input from the user for the limit for
  * fibonacci triangle, and printing the fibonacci series
- *  for the given number of times.
+ * for the given number of times.
  * Return: 0 for the successful execution
  */
 
